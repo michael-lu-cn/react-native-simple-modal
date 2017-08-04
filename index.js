@@ -62,11 +62,11 @@ class Modal extends Component {
     
     return false;
   }
-  componentDidMount() {
-    if (Platform.OS === 'android') {
-      BackHandler.addEventListener('hardwareBackPress', this.hardwareBackPress);
-    }
-  }
+ // componentDidMount() {
+ //   if (Platform.OS === 'android') {
+ //     BackHandler.addEventListener('hardwareBackPress', this.hardwareBackPress);
+ //   }
+ // }
   componentWillUnmount() {
     if (Platform.OS === 'android') {
       BackHandler.removeEventListener('hardwareBackPress', this.hardwareBackPress);
