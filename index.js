@@ -67,11 +67,11 @@ class Modal extends Component {
  //     BackHandler.addEventListener('hardwareBackPress', this.hardwareBackPress);
  //   }
  // }
-  componentWillUnmount() {
-    if (Platform.OS === 'android') {
-      BackHandler.removeEventListener('hardwareBackPress', this.hardwareBackPress);
-    }
-  }
+ // componentWillUnmount() {
+ //   if (Platform.OS === 'android') {
+ //     BackHandler.removeEventListener('hardwareBackPress', this.hardwareBackPress);
+ //   }
+ // }
   setPhase(toValue) {
     if (this.state.open != toValue) {
       const {animationDuration, animationTension} = this.props;
